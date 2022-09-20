@@ -1,10 +1,12 @@
 input,
 button {
   all: unset;
-  border: none;
   cursor: pointer;
-  outline: none;
-  width: 100%;
+}
+
+input:hover,
+button:hover {
+  transform: scale(1.1);
 }
 
 body {
@@ -40,16 +42,12 @@ header {
   align-items: center;
   height: 400px;
   width: 150px;
-  gap: 10px;
+  gap: 25px;
 }
 
 #colorInput {
   height: 80px;
   width: 80px;
-}
-
-#colorInput:hover {
-  transform: scale(1.1);
 }
 
 input[type="color"]::-webkit-color-swatch {
@@ -58,13 +56,13 @@ input[type="color"]::-webkit-color-swatch {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-#container {
+#grid {
   display: grid;
   height: 400px;
   width: 400px;
   grid-template-columns: repeat(var(--columns-row), 1fr);
   grid-template-rows: repeat(var(--columns-row), 1fr);
-  border: 2px solid red;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 footer {
